@@ -1,0 +1,29 @@
+###
+POST http://localhost:9000/api/user HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Mongosssse",
+    "age": 71,
+    "email": "mariongoose@email.com"
+}
+
+###
+GET http://localhost:9000/api/user HTTP/1.1
+
+
+###
+GET http://localhost:9000/api/user/66d22d706a80d51398f0a303 HTTP/1.1
+
+###
+PUT http://localhost:9000/api/user/66d236c6548d980349c80191 HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Pierre M ",
+    "age": 24,
+    "email": "pierremadridb@email.com"
+}
+
+###
+DELETE http://localhost:9000/api/user/66d22c5d38f71b4fad6cdd6c HTTP/1.1
